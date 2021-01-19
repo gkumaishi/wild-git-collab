@@ -35,6 +35,10 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
+ggplot(data = diamonds, aes(x = depth, y = carat, color = cut)) +
+  geom_point() +
+  theme_light()
+
 premium_diamonds <- diamonds %>% 
   filter(cut == "Premium")
 ```
