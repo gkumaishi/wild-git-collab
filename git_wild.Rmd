@@ -44,8 +44,13 @@ premium_diamonds <- diamonds %>%
 ```
 
 ```{r break-it-2}
+
+fair_diamonds <- diamonds %>% 
+  filter(cut == "Fair")
+
 high_carat_diamonds <- diamonds %>% 
   filter(carat > 1)
+
 ```
 
 ## END Discussion 3
